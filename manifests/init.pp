@@ -75,7 +75,7 @@ class winbind(
   $algorithmic_ids = true,
   $mkhomedir = true,
   $skel = undef,
-  $umask = undef
+  $umask = "0077"
 ) {
   $realm = upcase($domain)
 

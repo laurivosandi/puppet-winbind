@@ -3,5 +3,5 @@ Default: yes
 Priority: 900
 Session-Type: Additional
 Session:
-	required pam_mkhomedir.so<% if $skel %> skel=<%= $skel %><% end %><% if $umask %> umask=<%= $umask %><% end %>
+	required pam_mkhomedir.so<% if @skel %> skel=<%= @skel %><% end %><% if @umask %> umask=<%= @umask %><% end %>
 
